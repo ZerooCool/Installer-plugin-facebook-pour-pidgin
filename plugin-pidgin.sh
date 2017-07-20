@@ -67,7 +67,7 @@
  fi
  
  cd /tmp && wget  http://download.opensuse.org/repositories/home:/jgeboski/xUbuntu_16.10/Release.key
- sudo apt-key add -- > Release.key
+ sudo apt-key add -- < Release.key
  # Ou en une ligne et de façon automatique : sudo -s wget -O - http://download.opensuse.org/repositories/home:/jgeboski/xUbuntu_16.10/Release.key |apt-key add - 
  
  if [ $? != 0 ]; then
